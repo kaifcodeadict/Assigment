@@ -1,0 +1,50 @@
+.Nav {
+  display: flex;
+  z-index: 99;
+  height: var(--nav-height);
+  justify-content: space-between;
+  transition: 0.5s;
+  background-color: var(--body-color);
+  align-items: center;
+  font-size: var(--small-font-size);
+  padding: 0rem 58px;
+  box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.16);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.Logo {
+  font-family: var(--logo-font);
+  font-weight: 600;
+  line-height: 36.31px;
+  font-size: var(--semibig-font-size);
+  color: var(--second-buttonColor);
+}
+.Navright {
+  display: flex;
+  gap: 2rem;
+}
+.Navright div {
+  font-size: var(--semi-font-size);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.acclogoBack {
+  background-color: #a0a0a0;
+    justify-content: center;
+  height: 24px;
+  width: 24px;
+  top: 21px;
+  border-radius: 50%;
+}
+.accountBtn{
+    width: 82px;
+    height: 35px;
+    left: 1225px;
+    top: 16px;
+    justify-content: center;
+    background: #EDEDED;
+    border: 1px solid #DFDFDF;
+    border-radius: 17.5px
+}

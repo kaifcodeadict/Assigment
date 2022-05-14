@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lato&family=Montserrat:wght@400;500;700&display=swap');
+
+:root {
+  --body-color: #fff;
+  --text-color: #161616;
+  --home-text-color: #484848;
+  --Secondtext-color: #484848;
+  --second-buttonColor: #FD2E5A;
+
+  /* --body-color: #F2AA4CFF;
+    --container-color:  #101820FF;
+    --text-color: #ffff;
+    --second-buttonColor: #7A2048; */
+
+  /* ===============Font and Tryprography============= */
+
+  --body-font: 'Montserrat', sans-serif;
+  --help-font: 'Lato', sans-serif;       
+  --logo-font: 'Inter', sans-serif;
+
+  --nav-height: 78px;
+  --biggest-font-size: 34px;
+  --semibig-font-size: 30px;
+  --big-font-size: 18px;
+  --h1-font-size: 16px;
+  --h2-font-size: 20px;
+  --h3-font-size: 2.8rem;
+  --normal-font-size: 2rem;
+  --semi-font-size: 13px;
+  --small-font-size: 12px;
+  --smallest-font-size: 11px;
+  --smallest-small-font-size: 1.1rem;
+  --btn-font-size: 26px;
+
+  --font-medium: 400;
+  --font-semi-bold: 500;
+
+  --z-tooltrip: 10;
+  --nav-width: 7rem;
+
+  --colum-width: 55vw;
+}
+/* ====== Base ======== */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+head title {
+  font-family: var(--body-font);
+  font-size: 1rem;
+}
+html {
+  scroll-behavior: smooth;
+  background: var(--body-color);
+  overflow-x: hidden;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  transition: 0.4s;
+  font-family: var(--body-font);
+  font-size: var(--h2-font-size);
+  color: var(--text-color);
+}
+h1,
+h2,
+h3,
+h4 {
+  color: var(--text-color);
+  font-weight: var(--font-semi-bold);
+}
+span {
+  font-weight: var(--font-semi-bold);
+}
+ul {
+  list-style: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none;
+  color: var(--container-color);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img,
+video {
+  max-width: 100%;
+  max-height: auto;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
+input {
+  height: 2.5rem;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+  font-family: var(--body-font);
+  padding-left: 0.5rem;
+  border: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input:focus,
+textarea:focus {
+  outline: none;
+  padding-left: 0.5rem;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
