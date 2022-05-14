@@ -32,19 +32,19 @@
 }
 .acclogoBack {
   background-color: #a0a0a0;
-    justify-content: center;
+  justify-content: center;
   height: 24px;
   width: 24px;
   top: 21px;
   border-radius: 50%;
 }
-.accountBtn{
-    width: 82px;
-    height: 35px;
-    left: 1225px;
-    top: 16px;
-    justify-content: center;
-    background: #EDEDED;
-    border: 1px solid #DFDFDF;
-    border-radius: 17.5px
+.accountBtn {
+  width: 82px;
+  height: 35px;
+  left: 1225px;
+  top: 16px;
+  justify-content: center;
+  background: #ededed;
+  border: 1px solid #dfdfdf;
+  border-radius: 17.5px;
 }

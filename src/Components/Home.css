@@ -93,7 +93,7 @@
   border: 1px solid #def6f5;
   border-radius: 6px;
 }
-.contactForm{
+.contactForm {
   width: 60vw;
   padding: 2rem 12rem;
   background-color: var(--container-color);
@@ -101,42 +101,44 @@
   transition: 1s;
 }
 
-form{
+form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   margin-top: 2rem;
 }
 
-.formTitle{
-  font-size: var( --semi-font-size);
+.formTitle {
+  font-size: var(--semi-font-size);
   margin-bottom: 1rem;
   cursor: pointer;
   animation-name: formTitle;
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }
-.queryForm{
+.queryForm {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.queryForm input,.queryForm textarea{
-  background: #F7F7F7;
-border: 1px solid #E2E2E2;
-border-radius: 4px;
+.queryForm input,
+.queryForm textarea {
+  background: #f7f7f7;
+  border: 1px solid #e2e2e2;
+  border-radius: 4px;
 }
-.queryForm label{
-  font-size:var(--small-font-size) ;
+.queryForm label {
+  font-size: var(--small-font-size);
   font-weight: 500;
 }
-.contactName,.contactNumber{
+.contactName,
+.contactNumber {
   width: 100%;
 }
-.nameNumber label{
+.nameNumber label {
   display: flex;
 }
-.nameNumber{
+.nameNumber {
   display: grid;
   row-gap: 0.5rem;
   column-gap: 2rem;
@@ -144,17 +146,17 @@ border-radius: 4px;
   grid-template-columns: 1fr 1fr;
 }
 
-.query{
+.query {
   width: 38rem;
   height: 5rem;
 }
-.formBtn{
+.formBtn {
   cursor: pointer;
   margin-left: 35%;
   margin-right: 50%;
   background: var(--second-buttonColor);
-border-radius: 3px;
-  padding: .5rem 4rem;
+  border-radius: 3px;
+  padding: 0.5rem 4rem;
   color: #ffff;
   font-weight: bold;
   border: none;

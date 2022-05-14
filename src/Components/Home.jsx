@@ -43,7 +43,7 @@ function Home() {
   });
 
   const handleSubmit = async (e) => {
-    e.preventDefault()
+    e.preventDefault();
     // for form submit
   };
   return (
@@ -100,20 +100,20 @@ function Home() {
               </div>
             </AccordionSummary>
             <AccordionDetails>
-           <div className="chatContainer">
-             <div className="chatContent">
-               <img src={TelegramLogo} alt="" className="chatLogo" />
-              <h1 className="chatlogotitle">Telegram</h1>
-             </div>
-             <div className="chatContent">
-               <img src={WhatsappLogo} alt="" className="chatLogo" />
-              <h1 className="chatlogotitle">whatsApp</h1>
-             </div>
-             <div className="chatContent">
-               <img src={LivechatLogo} alt="" className="chatLogo" />
-              <h1 className="chatlogotitle">Live chat</h1>
-             </div>
-           </div>
+              <div className="chatContainer">
+                <div className="chatContent">
+                  <img src={TelegramLogo} alt="" className="chatLogo" />
+                  <h1 className="chatlogotitle">Telegram</h1>
+                </div>
+                <div className="chatContent">
+                  <img src={WhatsappLogo} alt="" className="chatLogo" />
+                  <h1 className="chatlogotitle">whatsApp</h1>
+                </div>
+                <div className="chatContent">
+                  <img src={LivechatLogo} alt="" className="chatLogo" />
+                  <h1 className="chatlogotitle">Live chat</h1>
+                </div>
+              </div>
             </AccordionDetails>
           </Accordion>
           <Accordion
@@ -135,26 +135,26 @@ function Home() {
               </div>
             </AccordionSummary>
             <AccordionDetails>
-            <div className="chatContainer">
-             <div className="chatContent">
-               <img src={FacebookLogo} alt="" className="chatLogo" />
-             </div>
-             <div className="chatContent">
-               <img src={InstaLogo} alt="" className="chatLogo" />
-             </div>
-             <div className="chatContent">
-               <img src={TwitterLogo} alt="" className="chatLogo" />
-             </div>
-             <div className="chatContent">
-               <img src={LinkedLogo} alt="" className="chatLogo" />
-             </div>
-           </div>
+              <div className="chatContainer">
+                <div className="chatContent">
+                  <img src={FacebookLogo} alt="" className="chatLogo" />
+                </div>
+                <div className="chatContent">
+                  <img src={InstaLogo} alt="" className="chatLogo" />
+                </div>
+                <div className="chatContent">
+                  <img src={TwitterLogo} alt="" className="chatLogo" />
+                </div>
+                <div className="chatContent">
+                  <img src={LinkedLogo} alt="" className="chatLogo" />
+                </div>
+              </div>
             </AccordionDetails>
           </Accordion>
           <Accordion
-          expanded={expanded === "panel3"}
-          onChange={handleChange("panel3")}
-          style={accordStyle}
+            expanded={expanded === "panel3"}
+            onChange={handleChange("panel3")}
+            style={accordStyle}
           >
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
@@ -180,68 +180,72 @@ function Home() {
               </div>
             </AccordionSummary>
             <AccordionDetails>
-            <div className="queryForm">
-            <form autoComplete="off" onSubmit={handleSubmit}>
-              <div className="nameNumber">
-                <label htmlFor="name">Name</label>
-                <label htmlFor="number">Phone number</label>
-                <input
-                  type="text"
-                  className="contactName"
-                  required
-
-                  name="name"
-                  id=""
-                  onChange={(e) => setForm({ ...form, name: e.target.value })}
-                />
-                <input
-                  type="number"
-                  className="contactNumber"
-                  name="number"
-                  required
-
-                  onChange={(e) => setForm({ ...form, number: e.target.value })}
-                  id=""
-                />
+              <div className="queryForm">
+                <form autoComplete="off" onSubmit={handleSubmit}>
+                  <div className="nameNumber">
+                    <label htmlFor="name">Name</label>
+                    <label htmlFor="number">Phone number</label>
+                    <input
+                      type="text"
+                      className="contactName"
+                      required
+                      name="name"
+                      id=""
+                      onChange={(e) =>
+                        setForm({ ...form, name: e.target.value })
+                      }
+                    />
+                    <input
+                      type="number"
+                      className="contactNumber"
+                      name="number"
+                      required
+                      onChange={(e) =>
+                        setForm({ ...form, number: e.target.value })
+                      }
+                      id=""
+                    />
+                  </div>
+                  <div className="nameNumber">
+                    <label htmlFor="subject">Subject</label>
+                    <label htmlFor="order">Order no.</label>
+                    <input
+                      type="text"
+                      className="subject"
+                      name="subject"
+                      id=""
+                      onChange={(e) =>
+                        setForm({ ...form, subject: e.target.value })
+                      }
+                    />
+                    <input
+                      type="text"
+                      className="subject"
+                      name="subject"
+                      id=""
+                      onChange={(e) =>
+                        setForm({ ...form, subject: e.target.value })
+                      }
+                    />
+                  </div>
+                  <label htmlFor="query">Your Query</label>
+                  <input
+                    type="text"
+                    className="query"
+                    name="query"
+                    required
+                    onChange={(e) =>
+                      setForm({ ...form, message: e.target.value })
+                    }
+                    id=""
+                  />
+                  <div className="formButton">
+                    <button className="formBtn" type="submit">
+                      Submit
+                    </button>
+                  </div>
+                </form>
               </div>
-              <div className="nameNumber">
-
-              <label htmlFor="subject">Subject</label>
-                <label htmlFor="order">Order no.</label>
-              <input
-                type="text"
-                
-                className="subject"
-                name="subject"
-                id=""
-                onChange={(e) => setForm({ ...form, subject: e.target.value })}
-                />
-              <input
-                type="text"
-                
-                className="subject"
-                name="subject"
-                id=""
-                onChange={(e) => setForm({ ...form, subject: e.target.value })}
-                />
-            
-                </div>
-                <label htmlFor="query">Your Query</label>
-              <input
-                type="text"
-                className="query"
-                name="query"
-                required
-                onChange={(e) => setForm({ ...form, message: e.target.value })}
-                id=""
-                />
-              <div className="formButton">
-                <button className="formBtn" type="submit">
-                  Submit
-                </button>
-              </div>
-            </form>
-            </div>
             </AccordionDetails>
           </Accordion>
         </div>
